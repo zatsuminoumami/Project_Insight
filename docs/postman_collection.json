@@ -1,0 +1,35 @@
+{
+    "info": {
+      "name": "Project Insight API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get Project Summary",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8000/projects/summary",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["projects", "summary"]
+          }
+        }
+      },
+      {
+        "name": "Search Tasks",
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8000/search/tasks?keyword=設計",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["search", "tasks"],
+            "query": [
+              {"key": "keyword", "value": "設計"}
+            ]
+          }
+        }
+      }
+    ]
+  }
